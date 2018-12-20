@@ -111,6 +111,7 @@ def train_top_model():
     print("[INFO] accuracy: {:.2f}%".format(eval_accuracy * 100))
     print("[INFO] Loss: {}".format(eval_loss))
 
+    model.save("test.h5")
     plt.figure(1)
 
     # summarize history for accuracy

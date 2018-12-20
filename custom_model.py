@@ -32,9 +32,6 @@ test_set= test_datagen.flow_from_directory(
     batch_size=32,
     class_mode='binary')
 
-from IPython.display import display
-from PIL import Image
-
 classifier.fit_generator(
     training_set,
     steps_per_epoch=20,
